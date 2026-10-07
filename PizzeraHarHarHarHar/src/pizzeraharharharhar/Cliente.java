@@ -4,6 +4,7 @@
  */
 package pizzeraharharharhar;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,14 +17,16 @@ public class Cliente {
 
     public Cliente(String nombre) {
         this.nombre = nombre;
+        this.pedidos = new ArrayList<>();
     }
    
     public boolean addPedido(Pedido pedido){
-        return false;
+        pedidos.add(pedido);
+        return true;
     }
 
     public String getNombre() {
-        return "";
+        return this.nombre;
     }
     
     
