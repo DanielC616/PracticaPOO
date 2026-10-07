@@ -15,4 +15,23 @@ public class Pizzeria {
     private List<Cliente> clientes;
     private List<Item> items;
     private List<Pedido> pedidos;
+    
+    public boolean addCliente(Cliente cliente){
+        return false;
+    }
+    public boolean addItem(Item item){
+        return false;
+    }
+    public boolean addPedido(Pedido pedido){
+        return false;
+    }
+    public Cliente getCliente(int index){
+        return null;
+    }
+    public Cliente getItem(int index){
+        return null;
+    }
+    public int calProdMasVendidoCliente(int numCliente){
+        return 0;
+    }
 }
