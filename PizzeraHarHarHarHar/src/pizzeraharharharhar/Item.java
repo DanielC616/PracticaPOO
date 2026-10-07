@@ -19,7 +19,7 @@ public class Item {
     }
 
     public String getNombre() {
-        return nombre;
+        return null;
     }
     
     
