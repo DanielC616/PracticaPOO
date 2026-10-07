@@ -141,6 +141,12 @@ public class PizzeraHarHarHarHar {
         for (int numCliente = 0; numCliente < 5; numCliente++) {
             int numProducto = pizzeria.calcProdMasVendidoCliente(numCliente); // calcProdMasVendidoCliente(int), pertenece a pizzeria
             if (numProducto != -1) {
+                System.out.println("num_cliente = " + numCliente);
+                System.out.println("El producto " + pizzeria.getItem(0).getNombre() + " se vendio: ");
+                System.out.println("El producto " + pizzeria.getItem(1).getNombre() + " se vendio: ");
+                System.out.println("El producto " + pizzeria.getItem(2).getNombre() + " se vendio: ");
+                System.out.println("El producto " + pizzeria.getItem(3).getNombre() + " se vendio: ");
+                System.out.println("El producto " + pizzeria.getItem(4).getNombre() + " se vendio: ");
                 System.out.println("El producto más vendido del cliente " + pizzeria.getCliente(numCliente).getNombre() + ": " +	
 		//	getCliente pertence a pizzeria, mientras que getNombre pertence a Cliente			        
 		pizzeria.getItem(numProducto).getNombre() + "\n"); //getItem pertenece a pizzeria, mientras que getNombre pertence a Item
