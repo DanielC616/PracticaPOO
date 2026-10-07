@@ -13,7 +13,11 @@ import java.util.List;
 public class Cliente {
     private String nombre;
     private List<Pedido> pedidos;
-    
+
+    public Cliente(String nombre) {
+        this.nombre = nombre;
+    }
+   
     public boolean addPedido(Pedido pedido){
         return false;
     }
