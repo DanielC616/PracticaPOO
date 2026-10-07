@@ -17,6 +17,10 @@ public class Item {
         this.nombre = nombre;
         this.valor = valor;
     }
+
+    String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }

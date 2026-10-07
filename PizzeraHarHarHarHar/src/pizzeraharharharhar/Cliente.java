@@ -21,4 +21,8 @@ public class Cliente {
     public boolean addPedido(Pedido pedido){
         return false;
     }
+
+    String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
