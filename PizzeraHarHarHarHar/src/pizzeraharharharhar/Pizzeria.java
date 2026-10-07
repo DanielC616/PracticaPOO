@@ -28,7 +28,7 @@ public class Pizzeria {
     public Cliente getCliente(int index){
         return null;
     }
-    public Cliente getItem(int index){
+    public Item getItem(int index){
         return null;
     }
     public int calProdMasVendidoCliente(int numCliente){
