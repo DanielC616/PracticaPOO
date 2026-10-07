@@ -4,6 +4,7 @@
  */
 package pizzeraharharharhar;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,6 +16,14 @@ public class Pizzeria {
     private List<Cliente> clientes;
     private List<Item> items;
     private List<Pedido> pedidos;
+
+    public Pizzeria() {
+        this.clientes = new ArrayList<>();
+        this.items = new ArrayList<>();
+        this.pedidos = new ArrayList<>();
+    }
+    
+    
     
     public boolean addCliente(Cliente cliente){
         return false;
