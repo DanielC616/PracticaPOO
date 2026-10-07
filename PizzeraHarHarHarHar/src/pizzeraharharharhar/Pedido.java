@@ -10,7 +10,7 @@ import java.util.List;
  *
  * @author Revan
  */
-public abstract class Pedido {
+public abstract class Pedido{
     protected Cliente cliente;
     protected List<Item> items;
 

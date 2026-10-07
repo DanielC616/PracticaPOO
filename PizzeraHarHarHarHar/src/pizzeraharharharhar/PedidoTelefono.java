@@ -4,10 +4,18 @@
  */
 package pizzeraharharharhar;
 
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
-public class PedidoTelefono {
+public class PedidoTelefono extends Pedido{
     private String telefono;
+
+    public PedidoTelefono(Cliente cliente,String telefono, List<Item> items) {
+        super(cliente, items);
+        this.telefono = telefono;
+    }
+    
 }

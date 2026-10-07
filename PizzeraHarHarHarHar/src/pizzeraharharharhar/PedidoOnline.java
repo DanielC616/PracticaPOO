@@ -4,11 +4,20 @@
  */
 package pizzeraharharharhar;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
-public class PedidoOnline {
+public class PedidoOnline extends Pedido {
     private String email;
+
+    public PedidoOnline(Cliente cliente, String email,  List<Item> items) {
+        super(cliente, items);
+        this.email = email;
+    }
     
+
 }
