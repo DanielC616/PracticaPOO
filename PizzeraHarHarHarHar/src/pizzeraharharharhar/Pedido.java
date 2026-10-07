@@ -4,10 +4,20 @@
  */
 package pizzeraharharharhar;
 
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
-public class Pedido {
+public abstract class Pedido {
+    protected Cliente cliente;
+    protected List<Item> items;
+
+    public Pedido(Cliente cliente, List<Item> items) {
+        this.cliente = cliente;
+        this.items = items;
+    }
+    
     
 }

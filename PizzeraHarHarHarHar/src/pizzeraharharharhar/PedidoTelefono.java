@@ -9,5 +9,5 @@ package pizzeraharharharhar;
  * @author Revan
  */
 public class PedidoTelefono {
-    
+    private String telefono;
 }

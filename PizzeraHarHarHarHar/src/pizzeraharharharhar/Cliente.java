@@ -4,10 +4,13 @@
  */
 package pizzeraharharharhar;
 
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
 public class Cliente {
-    
+    private String nombre;
+    private List<Pedido> pedidos;
 }

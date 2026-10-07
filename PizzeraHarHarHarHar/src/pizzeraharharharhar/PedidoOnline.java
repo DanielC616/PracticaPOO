@@ -9,5 +9,6 @@ package pizzeraharharharhar;
  * @author Revan
  */
 public class PedidoOnline {
+    private String email;
     
 }
