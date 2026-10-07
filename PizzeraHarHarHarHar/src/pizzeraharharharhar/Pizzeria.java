@@ -37,13 +37,11 @@ public class Pizzeria {
         return false;
     }
     public Cliente getCliente(int index){
-        Cliente c = new Cliente("Test");
-        return c;
+        return clientes.get(index);
     }
     
     public Item getItem(int index){
-        Item i = new Item("Test", 0);
-        return i;
+        return items.get(index);
     }
     public int calcProdMasVendidoCliente(int numCliente){
         return 0;
