@@ -31,7 +31,7 @@ public class Pizzeria {
     public Item getItem(int index){
         return null;
     }
-    public int calProdMasVendidoCliente(int numCliente){
+    public int calcProdMasVendidoCliente(int numCliente){
         return 0;
     }
 }

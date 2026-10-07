@@ -21,4 +21,10 @@ public class Cliente {
     public boolean addPedido(Pedido pedido){
         return false;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
+    
 }
