@@ -26,10 +26,12 @@ public class Pizzeria {
     
     
     public boolean addCliente(Cliente cliente){
-        return false;
+        this.clientes.add(cliente);
+        return true;
     }
     public boolean addItem(Item item){
-        return false;
+        this.items.add(item);
+        return true;
     }
     public boolean addPedido(Pedido pedido){
         return false;
@@ -38,6 +40,7 @@ public class Pizzeria {
         Cliente c = new Cliente("Test");
         return c;
     }
+    
     public Item getItem(int index){
         Item i = new Item("Test", 0);
         return i;
