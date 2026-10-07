@@ -26,10 +26,12 @@ public class Pizzeria {
         return false;
     }
     public Cliente getCliente(int index){
-        return null;
+        Cliente c = new Cliente("Test");
+        return c;
     }
     public Item getItem(int index){
-        return null;
+        Item i = new Item("Test", 0);
+        return i;
     }
     public int calcProdMasVendidoCliente(int numCliente){
         return 0;
