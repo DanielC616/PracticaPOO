@@ -11,10 +11,10 @@ import java.util.List;
  *
  * @author Revan
  */
-public class PedidoOnline extends Pedido {
+public class PedidoOnLine extends Pedido {
     private String email;
 
-    public PedidoOnline(Cliente cliente, String email,  List<Item> items) {
+    public PedidoOnLine(Cliente cliente, String email,  List<Item> items) {
         super(cliente, items);
         this.email = email;
     }

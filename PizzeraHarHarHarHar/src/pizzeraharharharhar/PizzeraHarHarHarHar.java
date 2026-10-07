@@ -41,7 +41,7 @@ public class PizzeraHarHarHarHar {
         itemsTemp.add(pizzeria.getItem(0));
         itemsTemp.add(pizzeria.getItem(2));
         itemsTemp.add(pizzeria.getItem(3));
-        pizzeria.addPedido(new PedidoTelefono(pizzeria.getCliente(0), "3001111110", itemsTemp)); addPedido(Pedido Telefono) -- 
+        pizzeria.addPedido(new PedidoTelefono(pizzeria.getCliente(0), "3001111110", itemsTemp)); addPedido(Pedido Telefono);
 
 	//Constructor de PedidoTelefono(Cliente, int, ArrayList<Item>)
 	//getCliente(int)
