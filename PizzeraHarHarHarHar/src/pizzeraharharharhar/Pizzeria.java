@@ -44,6 +44,37 @@ public class Pizzeria {
         return items.get(index);
     }
     public int calcProdMasVendidoCliente(int numCliente){
+        Cliente cliente = this.clientes.get(numCliente);
+        List<Pedido> pedido = this.pedidos;
+        int c1=0;
+        int c2=0;
+        int c3=0;
+        int c4=0;
+        int c5=0;
+        
+        
+        for (Pedido pe: pedido){
+            List<Item> items = pe.getItems();
+            for (Item it: items){
+                switch(it.getNombre()){
+                    case "Lasagna":
+                        c1++;
+                    case "Pizza hawaiana":
+                        c2++;
+                    case "Calzone":
+                        c3++;
+                    case "Pasta napolitana":
+                        c4++;
+                    case "Raviolis":
+                        c5++;
+                        
+                }
+            }
+        }
+        
+        
+      
+        
         return 0;
     }
 }

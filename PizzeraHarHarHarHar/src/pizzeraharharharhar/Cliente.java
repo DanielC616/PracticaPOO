@@ -28,6 +28,11 @@ public class Cliente {
     public String getNombre() {
         return this.nombre;
     }
+
+    public List<Pedido> getPedidos() {
+        return pedidos;
+    }
+    
     
     
 }

@@ -18,6 +18,13 @@ public abstract class Pedido{
         this.cliente = cliente;
         this.items = items;
     }
+
+    public List<Item> getItems() {
+        return items;
+    }
+    
+
+    
     
     
 }
