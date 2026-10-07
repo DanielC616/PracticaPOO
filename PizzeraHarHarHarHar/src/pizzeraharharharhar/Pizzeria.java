@@ -34,6 +34,7 @@ public class Pizzeria {
         return true;
     }
     public boolean addPedido(Pedido pedido){
+        this.pedidos.add(pedido);
         return false;
     }
     public Cliente getCliente(int index){
@@ -47,10 +48,10 @@ public class Pizzeria {
     
     public int calcProdMasVendidoCliente(int numCliente){
         Cliente cliente = this.clientes.get(numCliente);
-        List<Pedido> pedido = this.pedidos;
+        List<Pedido> pedido = cliente.getPedidos();
         int[] idCompare = new int[5];
         int prodMasVendido = -1;
-        
+        int indiceVendidos=-1;
         
         for (Pedido pe: pedido){
             List<Item> items = pe.getItems();
@@ -58,14 +59,21 @@ public class Pizzeria {
                 switch(it.getNombre()){
                     case "Lasagna":
                         idCompare[0]++;
+                        break;
                     case "Pizza hawaiana":
                         idCompare[1]++;
+                        break;
+                        
                     case "Calzone":
                         idCompare[2]++;
+                        break;
+                        
                     case "Pasta napolitana":
                         idCompare[3]++;
+                        break;
                     case "Raviolis":
                         idCompare[4]++;
+                        break;
                         
                 }
             }
@@ -74,10 +82,11 @@ public class Pizzeria {
         for (int i = 0; i < 5; i++) {
             if (idCompare[i]>prodMasVendido){
                 prodMasVendido=idCompare[i];
+                indiceVendidos=i;
             }
         }
       
         
-        return prodMasVendido;
+        return indiceVendidos;
     }
 }
